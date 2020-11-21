@@ -1,3 +1,8 @@
+import torch
+import torch.nn as nn
+
+from attention_module import Atten_Module
+
 def conv2d(params_list, batchnorm=True):
     channel_in, channel_out, kernel_size, stride, padding, activation = params_list
     layers = []
